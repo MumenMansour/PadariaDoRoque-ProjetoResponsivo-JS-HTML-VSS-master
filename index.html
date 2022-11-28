@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="SRC/CSS/reset.css">
+    <link rel="stylesheet" href="SRC/CSS/about.css">
+    <link rel="stylesheet" href="SRC/CSS/bebidas.css">
+    <link rel="stylesheet" href="SRC/CSS/combos.css">
+    <link rel="stylesheet" href="SRC/CSS/contatos.css">
+    <link rel="stylesheet" href="SRC/CSS/doces.css">
+    <link rel="stylesheet" href="SRC/CSS/produtos.css">
+    <link rel="stylesheet" href="SRC/CSS/carousel.css">
+    <link rel="stylesheet" href="SRC/CSS/salgados.css">
+    <link rel="stylesheet" href="SRC/CSS/style.css">
+
+
+    <link rel="stylesheet" href="SRC/HTML/about.html">
+    <link rel="stylesheet" href="SRC/HTML/bebidas.html">
+    <link rel="stylesheet" href="SRC/HTML/combos.html">
+    <link rel="stylesheet" href="SRC/HTML/contatos.html">
+    <link rel="stylesheet" href="SRC/HTML/doces.html">
+    <link rel="stylesheet" href="SRC/HTML/produtos.html">
+    <link rel="stylesheet" href="SRC/HTML/salgados.html">
+
+    <title>
+        Padaria Do Roque
+    </title>
+
+
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="SRC/IMG/logoSemTexto.png" alt="">
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item">
+                        <div>
+                            <img src="SRC/IMG/home.png" alt="">
+                        </div>
+                        <div>
+                            <a href="#" class="nav-link">Início</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+
+                        <div>
+                            <img src="SRC/IMG/bebidas.png" alt="">
+                        </div>
+                        <div>
+                            <a href="#" class="nav-link">Bebidas</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div>
+                            <img src="SRC/IMG/Instasize Background Remover.png" alt="">
+                        </div>
+                        <div>
+                            <a href="#" class="nav-link">Combos</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div>
+                            <img src="SRC/IMG/salgado.png" alt="">
+                        </div>
+                        <div>
+                            <a href="#" class="nav-link">Salgados</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div>
+                            <img src="SRC/IMG/contatos.png" alt="">
+                        </div>
+                        <div>
+                            <a href="#" class="nav-link">Nos Encontre</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div>
+                            <img src="SRC/IMG/prod.png" alt="">
+                        </div>
+                        <div>
+                            <a href="#" class="nav-link">Sobre Nós</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()">
+                    <img class="icon" src="SRC/IMG/menu.png" alt="">
+                </button>
+            </div>
+        </nav>
+
+
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item">
+                    <div class="menuflexitem">
+                        <div>
+                            <img src="SRC/IMG/home.png" alt="">
+                        </div>
+                        <div>
+                            <a href="#" class="nav-link">Início</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="menuflexitem">
+
+                        <div>
+                            <img src="SRC/IMG/bebidas.png" alt="">
+                        </div>
+                        <div>
+                            <a href="#" class="nav-link">Bebidas</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="menuflexitem">
+
+                        <div>
+                            <img src="SRC/IMG/Instasize Background Remover.png" alt="">
+                        </div>
+                        <div>
+                            <a href="#" class="nav-link">Combos</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="menuflexitem">
+                        <div>
+                            <img src="SRC/IMG/salgado.png" alt="">
+                        </div>
+                        <div>
+                            <a href="#" class="nav-link">Salgados</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="menuflexitem">
+                        <div>
+                            <img src="SRC/IMG/contatos.png" alt="">
+                        </div>
+                        <div>
+                            <a href="#" class="nav-link">Nos Encontre</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="menuflexitem">
+                        <div>
+                            <img src="SRC/IMG/prod.png" alt="">
+                        </div>
+                        <div>
+                            <a href="#" class="nav-link">Sobre Nós</a>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </header>
+
+
+
+
+
+
+    <div class="carrossel">
+
+        <h1>Porque comprar no Roque ?</h1>
+
+        <div class="container">
+            <div class="card-carousel">
+                <div class="card" id="1">
+                    <h1>Produtos Frescos.</h1>
+                    <div class="image-container"></div>
+                    <p>Ingredientes naturais</p>
+                </div>
+                <div class="card" id="2">
+                    <h1>Produtos Frescos.</h1>
+                    <div class="image-container"></div>
+                    <p></p>
+                </div>
+                <div class="card" id="3">
+                    <h1>Produtos Frescos.</h1>
+                    <div class="image-container"></div>
+                    <p></p>
+                </div>
+                <div class="card" id="4">
+                    <h1>Produtos Frescos.</h1>
+                    <div class="image-container"></div>
+                    <p></p>
+                </div>
+                <div class="card" id="5">
+                    <h1>Produtos Frescos.</h1>
+                    <div class="image-container"></div>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--
+    <div class="catalogo">
+        <div class="catalogo">
+            <div class="imgcatalogo">
+                <img src="" alt="">
+            </div>
+            <div class="infocatalogo">
+                <h1>
+
+                </h1>
+                <h2>
+
+                </h2>
+                <p>
+
+                </p>
+            </div>
+            <a href="">
+
+            </a>
+        </div>
+    </div>
+-->
+
+
+    <div class="cards">
+
+
+        <div class="carde">
+            <h1>
+                TITULOCARD
+            </h1>
+            <img src="" alt="">
+            <h2>
+            </h2>
+            <ul>
+                <li>
+
+                </li>
+                <li>
+
+                </li>
+                <li>
+
+                </li>
+                <li>
+
+                </li>
+                <li>
+
+                </li>
+                <li>
+
+                </li>
+            </ul>
+            <a href="http://">
+                <img id="imgcard" src="SRC/IMG/cart.png" alt="">
+                <p>ASDASDASDASDASDAS</p>
+            </a>
+        </div>
+
+
+
+    </div>
+
+    <div class="apresentacao">
+        <div class="quemsomos">
+            <img src="" alt="">
+            <div class="textoquemsomos">
+                <h1>
+
+                </h1>
+                <p>
+
+                </p>
+            </div>
+        </div>
+
+        <div class="depoimentos">
+            <div class="perfil">
+                <img src="" alt="">
+            </div>
+            <div class="textoperfil">
+                <h1>
+
+                </h1>
+                <p>
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="logofooter">
+            <img src="" alt="">
+        </div>
+        <div class="textofooter">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="midiasfooter">
+            <div class="botoesfooter">
+                <a href=""></a>
+            </div>
+            <div class="botoesfooter">
+                <a href=""></a>
+            </div>
+            <div class="botoesfooter">
+                <a href=""></a>
+            </div>
+            <div class="botoesfooter">
+                <a href=""></a>
+            </div>
+            <div class="botoesfooter">
+                <a href=""></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="logofooter">
+            <img src="" alt="">
+        </div>
+        <div class="textofooter">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="midiasfooter">
+            <div class="botoesfooter">
+                <a href=""></a>
+            </div>
+            <div class="botoesfooter">
+                <a href=""></a>
+            </div>
+            <div class="botoesfooter">
+                <a href=""></a>
+            </div>
+            <div class="botoesfooter">
+                <a href=""></a>
+            </div>
+            <div class="botoesfooter">
+                <a href=""></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="SRC/JS/carousel.js"></script>
+    <script src="SRC/JS/main.js"></script>
+
+</body>
+
+</html>
