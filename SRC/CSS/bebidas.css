@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+
+
+:root {
+    --fonteTexto:  'Satisfy', cursive;
+    --fonteTitulo:'Satisfy', cursive;
+    --fundo1: white;
+    --fundoApresentacao: rgba(107, 45, 45, 0.356);
+    --fundoCards: rgba(148, 233, 233, 0.295);
+    --fundoBotao: tomato; 
+    --corLetraCard: rgb(154, 142, 142);
+    --corTituloCard: red; 
+    --fonteCard: 'Roboto', sans-serif;
+
+    
+}
+
+
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+
+
+header {
+    background-color: #ffffff;
+    box-shadow: 0px 3px 10px #ffffff;
+    font: var(--fonteTexto);
+
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list img {
+
+    width: 25px;
+    margin: 3px;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+}
+.nav-list a{
+    
+    margin: 10px;
+}
+.nav-list a:hover{
+    text-decoration: 3px red underline;
+    transition: 0.4s;
+}
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: rgb(7, 6, 6);
+    font-weight: 400;
+}
+
+.login-button button {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: var(--fundo1);
+}
+
+.login-button button a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+
+.apresentacao {
+    margin: 50px;
+    background: var(--fundoApresentacao)
+}
+
+.carrossel {
+    background: var(--fundo1);
+}
+
+.catalogo {
+    background: yellow;
+}
+
+.cards {
+    
+    justify-content: center;
+    flex-wrap: wrap;
+    background: var(--fundo1);
+    display: flex;
+    font: var(--fonteCard);
+    
+
+}
+
+.carde {
+    border: 1px solid rgb(4, 0, 0);
+    margin: 25px;
+    font-size: 0.8rem;
+    width: 450px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 50px;
+}
+
+.cards .carde:hover{
+    box-shadow: 0 2px 2px 0 red;
+border-bottom: 2px solid red ;
+border-right: 2px solid  red;
+}
+.carde h1{
+    font: var(--fonteCard);
+    font-size: 1rem;
+    padding: 5px;
+
+}
+
+.carde a{
+    font: var(--fonteCard);
+    text-decoration: none;
+    border: 1px solid rgb(4, 3, 3);
+    color: black;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+.carde #imgcard{
+    width: 25px;
+    margin-right: 15px ;
+}
+
+.carde a:hover{
+    background-color: rgba(255, 0, 0, 0.882);
+    
+}
+
+
+
+
+.footer {
+    background: pink;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 980px) {
+    .nav-bar {
+        font-family: 'Satisfy', cursive;
+        padding: 1.5rem 4rem;
+    }
+
+    
+    .nav-item img{
+        margin: 0 10px 00;
+        width: 25px;
+    }
+    .nav-item ul{
+        display: flex;
+    }
+    .nav-item {
+
+        display: none;
+    }
+    .menuflexitem a:hover{
+        text-decoration: 3px red underline;
+        transition: 0.4s;
+    }
+
+    .login-button {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .menuflexitem{
+        font-family: 'Satisfy', cursive;
+        align-items: flex-end;
+        display: flex;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 1rem;
+        align-items: center;
+    }
+
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+
+    .mobile-menu .login-button button {
+        width: 50px;
+    }
+
+    .open {
+        display: block;
+    }
+
+    .mobile-menu-icon img {
+        width: 50px;
+    }
+
+}

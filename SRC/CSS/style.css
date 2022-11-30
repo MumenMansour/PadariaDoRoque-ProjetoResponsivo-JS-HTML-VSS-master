@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 
 
@@ -15,6 +15,8 @@
     --fundoBotao: tomato; 
     --corLetraCard: rgb(154, 142, 142);
     --corTituloCard: red; 
+    --fonteCard: 'Roboto', sans-serif;
+
     
 }
 
@@ -74,7 +76,7 @@ header {
     margin: 10px;
 }
 .nav-list a:hover{
-    text-decoration: 3px aqua underline;
+    text-decoration: 3px red underline;
     transition: 0.4s;
 }
 .nav-link {
@@ -88,7 +90,7 @@ header {
     border: none;
     padding: 10px 15px;
     border-radius: 5px;
-    background-color: #0187a7;
+    background-color: var(--fundo1);
 }
 
 .login-button button a {
@@ -121,10 +123,12 @@ header {
 }
 
 .cards {
+    
     justify-content: center;
     flex-wrap: wrap;
-    background: var(--fundoCards);
+    background: var(--fundo1);
     display: flex;
+    font: var(--fonteCard);
     
 
 }
@@ -146,12 +150,14 @@ border-bottom: 2px solid red ;
 border-right: 2px solid  red;
 }
 .carde h1{
+    font: var(--fonteCard);
     font-size: 1rem;
     padding: 5px;
 
 }
 
 .carde a{
+    font: var(--fonteCard);
     text-decoration: none;
     border: 1px solid rgb(4, 3, 3);
     color: black;
@@ -171,16 +177,55 @@ border-right: 2px solid  red;
     
 }
 
+.apresentacao{
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+}
 
-
+.apresentacao img{
+    margin: 15px;
+    
+}
 
 .footer {
     background: pink;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+}
+.footer img{
+    margin: 10px;
+    width:150px
+}
+.footer .textofooter{
+    margin: 15px;
+    text-decoration: none;
+}
+.footer .midiasfooter{
+    flex-wrap: wrap;
+    width: 350px;
+    display: flex;
+    text-decoration: none;
+    margin: 15px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
 
 
-
-
+.footer .midiasfooter a{
+    padding: 15px;
+    color: black;
+    text-decoration: none;
+}
+.botoesfooter{
+    padding: 8px;
+}
 
 
 
@@ -203,7 +248,7 @@ border-right: 2px solid  red;
         display: none;
     }
     .menuflexitem a:hover{
-        text-decoration: 3px aqua underline;
+        text-decoration: 3px red underline;
         transition: 0.4s;
     }
 
